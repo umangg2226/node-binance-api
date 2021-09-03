@@ -8,7 +8,7 @@
  * @module jaggedsoft/node-binance-api
  * @return {object} instance to class object */
 let api = function Binance( options = {} ) {
-    if ( !new.target ) return new api( options ); // Legacy support for calling the constructor without 'new'
+    // if ( !new.target ) return new api( options ); // Legacy support for calling the constructor without 'new'
     let Binance = this; // eslint-disable-line consistent-this
     const WebSocket = require( 'ws' );
     const request = require( 'request' );
